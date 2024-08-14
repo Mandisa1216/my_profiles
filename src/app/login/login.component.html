@@ -1,16 +1,23 @@
 <nav class="navbar">
-    <div class="logo">
-        <a href="#">{{mylist[4]}}</a>
-    </div>
-    <ul class="nav-links">
-        <li><a href="#home"></a>{{mylist[0]}}</li>
-        <li><a href="#about">{{mylist[1]}}</a></li>
-        <li><a href="#projects">{{mylist[2]}}</a></li>
-        <li><a href="#contact">{{mylist[3]}}</a></li>
-    </ul>
-    <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-    </div>
-</nav>
+        <div class="logo">
+            <a href="#">{{my_list [1]}}</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">{{my_list [0]}}</a></li>
+            <li><a href="#">{{my_list [2]}}</a></li>
+            <li><a href="#">{{my_list [3]}}</a></li>
+            <li class="dropdown">
+                <a href="#">Products</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Product 1</a></li>
+                    <li><a href="#">Product 2</a></li>
+                    <li><a href="#">Product 3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
