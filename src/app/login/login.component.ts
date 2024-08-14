@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './login.component.scss'
 })
 export class LoginComponent {
+  my_list = [
+    'home','about','projects','contact','Mandisa'
+  ]
 
 }
