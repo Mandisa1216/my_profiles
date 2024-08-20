@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
   my_list = [
-    'home','about','projects','contact','Mandisa'
+    'Mandisa Portfolio','Home','projects','contact','About'
   ]
 
 }

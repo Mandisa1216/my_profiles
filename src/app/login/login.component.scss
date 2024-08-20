@@ -1,86 +1,36 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-}
-
+// /* Navbar Styles */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #333;
+    background-color: #f8f9fa; /* Light background color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 10px 20px;
+    border-radius: 8px;
 }
 
-.logo a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: bold;
+.navbar .nav-link {
+    color: #007bff; /* Primary color for links */
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-.nav-links {
-    list-style: none;
-    display: flex;
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    background-color: #007bff; /* Primary color on hover/active */
+    color: #fff; /* White text on hover/active */
 }
 
-.nav-links li {
-    margin-left: 20px;
+/* Add some margin between the items */
+.nav-item {
+    margin-right: 10px;
 }
 
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: #f39c12;
-}
-
-/* Burger menu for mobile view */
-.burger {
-    display: none;
-    cursor: pointer;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 24px;
-}
-
-.burger div {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    border-radius: 3px;
-}
-
-/* Media Query for Mobile */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        background-color: #333;
+/* Adjustments for mobile view */
+@media (max-width: 576px) {
+    .navbar {
         text-align: center;
     }
-
-    .nav-links li {
-        margin: 10px 0;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .burger {
-        display: flex;
+    .navbar .nav-item {
+        margin-bottom: 10px;
     }
 }
